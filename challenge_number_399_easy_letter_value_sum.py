@@ -40,7 +40,7 @@ from typing import Dict, List, Tuple
 
 class LetterSum:
     @staticmethod
-    def calculate(string: str) -> int:
+    def calculate(word: str) -> int:
         """
         Calculate the sum of the alphabetical values of the letters in a given string.
 
@@ -55,7 +55,7 @@ class LetterSum:
         Returns:
         int: The sum of the alphabetical values of the letters in the input string.
         """
-        return sum(ord(i) - 96 for i in string.lower() if i.isalpha())
+        return sum(ord(i) - 96 for i in word.lower() if i.isalpha())
 
 
 class WordAnalyzer:
